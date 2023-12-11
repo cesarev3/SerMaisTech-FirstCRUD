@@ -1,3 +1,5 @@
+package java.classes;
+
 public class ViewScreens {
     public boolean checkMenuOption(String inputString) {
         int inputOption = Integer.parseInt(inputString);
