@@ -1,10 +1,8 @@
-package java.classes;
-
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class TestUser {
+public class MainApplication {
 
     public static void main(String[] args) {
         // criando um usuário, esse usuario será salvo no banco de dados
@@ -107,10 +105,9 @@ public class TestUser {
                             getName, getEmail, formatLocalDate(getBirthdayDate)
                     );
 
-                    // verifica se usuário deve ser atualizado
+                    // verifica e atualiza usuário
                     if (continueProcedure(scanner, EntryMessages.CHECKUPDATE)) {
-                        userOperations.removeUser(getEmail);
-                        userOperations.saveUser(updateUser);
+                        userOperations.updateUser(updateUser);
                     }
 
                     // voltando para tela principal

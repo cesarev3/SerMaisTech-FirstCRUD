@@ -1,5 +1,3 @@
-package java.classes;
-
 public class ViewScreens {
     public boolean checkMenuOption(String inputString) {
         int inputOption = Integer.parseInt(inputString);
@@ -27,7 +25,7 @@ public class ViewScreens {
 
     public void printReadScreen() {
         System.out.println("\n|------------------------------------------------------|");
-        System.out.println("|            Tela de leitura de  usuários              |");
+        System.out.println("|            Tela de leitura de usuários               |");
         System.out.println("|------------------------------------------------------|");
     }
 

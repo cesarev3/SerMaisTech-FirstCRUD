@@ -1,5 +1,3 @@
-package java.classes;
-
 public enum EntryMessages {
 
     GETNAMES("\nNome do usuário\n> "),

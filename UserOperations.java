@@ -1,5 +1,3 @@
-package java.classes;
-
 import java.util.ArrayList;
 
 public class UserOperations {
@@ -29,6 +27,19 @@ public class UserOperations {
                 break;
             }
         }
+    }
+
+    public void updateUser(User usuario) {
+
+        int index = 0;
+        for(User item : dataBaseUsers) {
+            if (item.getUserEmail().equals(usuario.getUserEmail())) {
+                break;
+            }
+            index ++;
+        }
+        this.dataBaseUsers.set(index, usuario);
+        System.out.println(">>> usuário atualizado!");
     }
 
     public void saveUser(User usuario) {
